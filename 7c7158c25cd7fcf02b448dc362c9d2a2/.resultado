@@ -1,0 +1,22 @@
+127.0.0.1 - - [10/Mar/2022 20:03:40] "GET /resultado?ponto=00031&nome=João HTTP/1.1" 404 -
+127.0.0.1 - - [10/Mar/2022 20:03:40] "GET /resultado?ponto=00012&nome=Matheus HTTP/1.1" 404 -
+127.0.0.1 - - [10/Mar/2022 20:03:40] "GET /resultado?ponto=00024&nome=Carla HTTP/1.1" 404 -
+127.0.0.1 - - [10/Mar/2022 20:03:40] "GET /resultado?ponto=00034&nome=Curingão HTTP/1.1" 404 -
+127.0.0.1 - - [10/Mar/2022 20:03:40] "GET /resultado?ponto=00033&nome=Davi HTTP/1.1" 404 -
+127.0.0.1 - - [22/Apr/2022 15:23:38] "GET /resultado?ponto=00052&nome=Naruto HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/data/data/com.termux/files/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/data/data/com.termux/files/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/data/data/com.termux/files/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/data/data/com.termux/files/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test
+    httpd.serve_forever()
+  File "/data/data/com.termux/files/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)
+  File "/data/data/com.termux/files/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt

@@ -1,0 +1,4 @@
+apachectl
+#python2 -m SimpleHTTPServer 8000 2> .resultado
+python2 -m SimpleHTTPServer 8000 2> /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/.resultado
+python3 resultado.py

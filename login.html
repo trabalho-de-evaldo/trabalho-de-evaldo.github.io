@@ -1,0 +1,46 @@
+<script>
+pv = localStorage.getItem("nomej");
+
+if (typeof pv != "object" && pv != "null"){
+    window.location.href="/";
+}
+
+localStorage.setItem("score", 0);
+</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho de evaldo</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="start">
+                <h1>The Batman</h1>
+                <input v-model="name" id="name" placeholder="Seu nome" type="text" autocomplete="on">
+                <button onclick="start()" id="start">Começar</button>
+            </div>
+        </div>
+
+        <script src="js/alert.min.js"></script>
+	<script>
+            function start(){
+                var input = document.querySelector("#name");
+                var texto = input.value;
+                texto = texto.replace(/[^a-zA-Z0-9  ]/g, '');
+                if (texto == ""){
+                    swal("Erro", "Seu nome não pode ficar vazio e nem conter caracteres especiais ;)", "error");
+                }else{
+                    localStorage.setItem("nomej", texto);
+                    window.location.href="/";
+                }
+
+            }
+
+            swal("Trabalho de evaldo - EREMCJF", "Coloque seu nome para poder jogar (Sem acentos e caracteres especiais). Jogadores com nomes ofensivos serão banidos do jogo!", "success");
+	</script>
+    </body>
+</html>
